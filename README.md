@@ -54,37 +54,88 @@ echo "Setup complete! Your environment is ready."
 
 Run the following commands step by step to set up the project manually:
 
+
+### Clone the Repository
 ```bash
-# Clone the Repository
 git clone https://github.com/kanagajayasankar/TwitterOffensiveLanguageFinder.git
 ```
-# Navigate to the Project Directory
+
+
+### Navigate to the Project Directory
+```bash
 cd TwitterOffensiveLanguageFinder
 ```
-# Create a Virtual Environment (Optional but Recommended)
+### Create a Virtual Environment (Optional but Recommended)
+```bash
 python -m venv env
 ```
-# Activate the Virtual Environment
-# On Windows
-# .\env\Scripts\activate
+### Activate the Virtual Environment
+#### On Windows
+```bash
+.\env\Scripts\activate
 ```
-# On macOS/Linux
+#### On macOS/Linux
+```bash
 source env/bin/activate
 ```
-# Install Required Libraries
+### Install Required Libraries
+```bash
 pip install pandas nltk scikit-learn spacy plotly
 ```
-# Download NLTK Resources
+### Download NLTK Resources
+```bash
 python -c "import nltk; nltk.download('all')"
 ```
-# Download spaCy Language Model
+### Download spaCy Language Model
+```bash
 python -m spacy download en_core_web_sm
 ```
+
+```bash
 echo "Setup Complete! Your environment is ready."
 ```
+## Usage
 
-# olaf
-Used libraries:
+### Data Collection and Preprocessing
+Run `Twitter_Data.ipynb` to collect and preprocess Twitter data.
+
+### Generate Training Data
+Use `generate_training_data.ipynb` to create training datasets.
+
+### Model Training
+Train models using:
+- `Neural_Network.ipynb`
+- `LSTM_Model.ipynb`
+- `BiLSTM.ipynb`
+
+### Classification
+Run `classifier.ipynb` to classify new tweets using trained models.
+
+---
+
+## Contributing
+Contributions are welcome! Follow these steps to contribute:
+
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature-branch-name
+
+   ```
+3. **Make your changes and commit them:**
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. **Push to the branch:**
+   ```bash
+   git push origin feature-branch-name
+   ```
+5. **Submit a pull request.**
+
+
+
+# olaf 
+### Used libraries: Brief Explanation
 
 - Pandas provides high-performance data structures and data analysis tools [8].
 
