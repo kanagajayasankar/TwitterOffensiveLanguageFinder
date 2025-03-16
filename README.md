@@ -1,3 +1,54 @@
+# TwitterOffensiveLanguageFinder
+
+## Overview
+The **TwitterOffensiveLanguageFinder** is a project designed to detect offensive language in tweets. It employs machine learning models and natural language processing (NLP) techniques to classify tweets as offensive or non-offensive. The project consists of multiple Jupyter notebooks for data collection, preprocessing, model training, and evaluation.
+
+## Features
+- **Data Collection**: Scripts to gather and preprocess Twitter data.
+- **Data Preprocessing**: Cleaning and preparing text data for modeling.
+- **Modeling**: Implementation of various machine learning models, including LSTM and BiLSTM networks.
+- **Evaluation**: Tools to assess model performance using different metrics.
+
+## Technologies Used
+This project utilizes the following libraries and tools:
+- **Pandas** - Data manipulation and analysis.
+- **re** - Regular expressions for text processing.
+- **nltk** - Natural Language Toolkit for text processing and tokenization.
+- **scikit-learn** - Machine learning algorithms and model evaluation.
+- **spaCy** - NLP processing library for tokenization and named entity recognition.
+- **Plotly** - Interactive graphing library for data visualization.
+
+## Installation
+
+### Automated Setup (Recommended)
+Run the following script in your terminal to automate the setup process:
+
+```bash
+#!/bin/bash
+set -e
+
+echo "Cloning the repository..."
+git clone https://github.com/kanagajayasankar/TwitterOffensiveLanguageFinder.git
+cd TwitterOffensiveLanguageFinder
+
+echo "Creating a virtual environment..."
+python3 -m venv env
+
+echo "Activating virtual environment..."
+source env/bin/activate
+
+echo "Installing required dependencies..."
+pip install --upgrade pip
+pip install pandas nltk scikit-learn spacy plotly
+
+echo "Downloading NLTK resources..."
+python -c "import nltk; nltk.download('all')"
+
+echo "Downloading spaCy language model..."
+python -m spacy download en_core_web_sm
+
+echo "Setup complete! Your environment is ready."
+```
 # olaf
 Used libraries:
 
