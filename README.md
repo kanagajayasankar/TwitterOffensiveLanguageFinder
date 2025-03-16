@@ -49,6 +49,40 @@ python -m spacy download en_core_web_sm
 
 echo "Setup complete! Your environment is ready."
 ```
+
+## Manual Setup
+
+Run the following commands step by step to set up the project manually:
+
+```bash
+# Clone the Repository
+git clone https://github.com/kanagajayasankar/TwitterOffensiveLanguageFinder.git
+```
+# Navigate to the Project Directory
+cd TwitterOffensiveLanguageFinder
+```
+# Create a Virtual Environment (Optional but Recommended)
+python -m venv env
+```
+# Activate the Virtual Environment
+# On Windows
+# .\env\Scripts\activate
+```
+# On macOS/Linux
+source env/bin/activate
+```
+# Install Required Libraries
+pip install pandas nltk scikit-learn spacy plotly
+```
+# Download NLTK Resources
+python -c "import nltk; nltk.download('all')"
+```
+# Download spaCy Language Model
+python -m spacy download en_core_web_sm
+```
+echo "Setup Complete! Your environment is ready."
+```
+
 # olaf
 Used libraries:
 
