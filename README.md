@@ -1,7 +1,12 @@
 # TwitterOffensiveLanguageFinder
 
+This is a project I originally **worked on and contributed** to in **2020**.
+Due to the **accidental deletion** of my previous **GitHub account**, I am **re-uploading** it here.
+
 ## Overview
 The **TwitterOffensiveLanguageFinder** is a project designed to detect offensive language in tweets. It employs machine learning models and natural language processing (NLP) techniques to classify tweets as offensive or non-offensive. The project consists of multiple Jupyter notebooks for data collection, preprocessing, model training, and evaluation.
+
+
 
 ## Features
 - **Data Collection**: Scripts to gather and preprocess Twitter data.
